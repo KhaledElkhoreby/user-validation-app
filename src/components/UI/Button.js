@@ -1,9 +1,7 @@
-import style from "./Button.module.css";
-
 const Button = (props) => {
   return (
     <button
-      className={`${style.button} ${props.className}`}
+      className={`btn btn-primary shadow ${props.className}`}
       type={props.type || "button"}
       onClick={props.onClick}
     >

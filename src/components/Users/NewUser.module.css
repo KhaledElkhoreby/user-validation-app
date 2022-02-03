@@ -5,11 +5,13 @@
   width: 100%;
   max-width: 30rem;
   box-shadow: 0px 0rem 0.35rem rgb(0 0 0 / 18%);
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  animation: slide 0.3s ease forwards alternate;
+  -webkit-animation: slide 0.3s ease forwards alternate;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
 }
 .NewUser p {
   width: 50%;
@@ -19,4 +21,22 @@
 .NewUser:hover {
   box-shadow: 0px 0rem 0.35rem salmon;
   border: none;
+}
+@keyframes slide {
+  from {
+    /* opacity: 0; */
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+  }
+  to {
+    /* opacity: 1; */
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
 }

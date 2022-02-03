@@ -13,9 +13,7 @@ const UserList = (props) => {
   ));
   return (
     <Card>
-      <ul
-        className={`bg-light mx-auto border border-2 rounded d-grid gap-3 p-3 shadow ${styles.UserList}`}
-      >
+      <ul className={`d-grid gap-3 overflow-hidden ${styles.UserList}`}>
         {users}
       </ul>
     </Card>
